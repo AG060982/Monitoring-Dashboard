@@ -80,8 +80,8 @@ Steps to create Dashboard in thirty minutes:
    http://192.168.31.50:3000/      (Grafana) -- userid/password (admin/admin) (change it after first login)
    ```
 8. Configuring the multiple clients/hosts to send the Matrix to the Gateway.
-   We are using simple bash script to fetch the matrix from each server and post it to the gateway. You can also use "node_exporter" to get the details but I havent tried it yet. 
-   We will configure the script as crontab job to run every one minute of interval.
+   I am using simple bash script to fetch the matrix from each server and post it to the gateway. You can also use "node_exporter" to get the details but I havent tried it yet. 
+   I have configured the script as crontab job to run every one minute of interval.
    It will not generate any IOPS on the server as its not logging any details on client side and just running basic monitoring commands such as - top,awk,tail.
    CPU and memory utilization is < 0.9.
    
