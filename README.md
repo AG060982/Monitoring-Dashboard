@@ -122,3 +122,6 @@ echo $var
 # push to the prometheus pushgateway
 curl –noproxy "*" -X POST -H "Content-Type: text/plain" --data "$var" http://192.168.31.50:9091/metrics/job/top/instance/machine
 ```
+
+![](images/dashboard1.PNG)
+![](images/dashboard2.PNG)
