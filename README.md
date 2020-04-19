@@ -2,9 +2,10 @@
 Applications / Services Detail monitoring setup in 30 Minutes using Prometheus and Grafana. Can monitor (CPU/Memory/Status/Alert) of all the application services running on different Linux machines.
 
 Steps to create Dashboard in thirty minutes:
-1. Any Flavour of Linux OS as per your choice (In my case I am using centos 7)
+1. Any Flavour of Linux OS as per your choice (In my case I am using centos 7).
 
 2. If you want very straight forward setup install Docker on the selected machine to install and run required application.
+   Docker Installation on Cent OS.
    ```
    sudo yum install -y yum-utils
    sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
@@ -14,7 +15,7 @@ Steps to create Dashboard in thirty minutes:
    ###this should Print hello world from Docker ( Successful configuration of Docker )
    ```
    
-3. Pull the push-gateway image from the docker and run as below.
+3. Pull the Prometheus push-gateway image from the docker and run as below.
    ```
    sudo docker pull prom/pushgateway
    sudo docker run -d -p 9091:9091 --name pushgateway prom/pushgateway
