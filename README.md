@@ -4,9 +4,9 @@ Applications / Services Detail monitoring setup in 30 Minutes using Prometheus a
 Steps to create Dashboard in thirty minutes:
 1. Any Flavour of Linux OS as per your choice (In my case I am using centos 7).
 
-2. If you want very straight forward setup install Docker on the selected machine to install and run required application.
-   Docker Installation on Cent OS.
+2. For fast setup process I am using Docker. You can use native installation method also, have provided link and steps for that. Setup and install Docker on the selected machine.
    ```
+   ###Docker Installation on Cent OS###
    sudo yum install -y yum-utils
    sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
    sudo yum install docker-ce docker-ce-cli containerd.io
